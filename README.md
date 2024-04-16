@@ -8,7 +8,7 @@ Para instalar este proyecto, sigue estos pasos:
 
 1. Clona el repositorio
 2. Debes tener docker instalado en tu computador
-3. Ejecuta el comando ```docker compose up -d
+3. Ejecuta el comando `docker compose up -d`
 
 
 ## Uso
