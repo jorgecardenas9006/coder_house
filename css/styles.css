@@ -43,6 +43,20 @@
     .footer-redes{
         justify-content: center !important; 
     }
+    .top-description-title{
+        display: none;
+    }
+    .top-description-text{
+        display: none;
+    }
+    .top-spaces{
+        border: 0;
+        height: 0.2rem;
+        background: linear-gradient(90deg, #ed4264 35%, #ffedbc 100%);
+    }
+    .proyectos-top-grid{
+        display: contents !important;
+    }
 }
 @media (min-width: 576px) and (max-width: 767px) {
     .menu-logo{
@@ -247,11 +261,28 @@
         justify-content: center;
     }
     .star {
-        font-size: 50px;
+        font-size: 2rem;
         color: gray;
     }
     .filled {
         color: gold;
+    }
+    .top-description{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .top-description-title{
+        display: flex;
+        justify-content: center;
+    }
+    .top-description-text{
+        padding: 1.2rem;
+    }
+    .top-spaces{
+        border: 0;
+        height: 0.2rem;
+        background: linear-gradient(90deg, #ed4264 35%, #ffedbc 100%);
     }
   }
 .footer-redes{
