@@ -23,10 +23,10 @@
         margin: 0 !important;
     }
     .carousel-item img{
-        height: 25rem;
+        height: 20rem;
     }
     .menu-logo{
-        width: 20rem;
+        width: 10rem;
     }
     .navbar-brand{
         display: flex;
@@ -43,9 +43,6 @@
     .footer-redes{
         justify-content: center !important; 
     }
-    .top-description-title{
-        display: none;
-    }
     .top-description-text{
         display: none;
     }
@@ -57,10 +54,21 @@
     .proyectos-top-grid{
         display: contents !important;
     }
+    .proyectos-top-impar{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .top-description-title{
+        text-align: center;
+        color: #ffedbc !important;  /* color del texto */
+        text-shadow: 2px 2px 4px #000000;  /* sombra del texto */
+        font-family: 'Arial', sans-serif;  /* tipo de letra */
+        font-size: 2em;  /* tamaño del texto */
+    }
 }
 @media (min-width: 576px) and (max-width: 767px) {
     .menu-logo{
-        width: 20rem;
+        width: 15rem;
     }
     .container-fluid{
         display: flex;
@@ -79,7 +87,7 @@
         margin: 0 !important;
     }
     .carousel-item img{
-        height: 30rem;
+        height: 25rem;
     }
     .navbar-brand{
         display: flex;
@@ -96,18 +104,37 @@
     .footer-redes{
         justify-content: center !important; 
     }
+    .top-spaces{
+        border: 0;
+        height: 0.2rem;
+        background: linear-gradient(90deg, #ed4264 35%, #ffedbc 100%);
+    }
+    .proyectos-top-grid{
+        display: contents !important;
+    }
+    .proyectos-top-impar{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .top-description-title{
+        text-align: center;
+        color: #ffedbc !important;  /* color del texto */
+        text-shadow: 2px 2px 4px #000000;  /* sombra del texto */
+        font-family: 'Arial', sans-serif;  /* tipo de letra */
+        font-size: 2em;  /* tamaño del texto */
+    }
   }
   
   /* Estilos para pantallas medianas (768px o más) */
   @media (min-width: 768px) and (max-width: 991px) {
     .menu-logo{
-        width: 20rem;
+        width: 15rem;
     }
     .carousel-indicators{
         margin: 0 !important;
     }
     .carousel-item img{
-        height: 30rem;
+        height: 25rem;
     }
     .navbar-brand{
         display: flex;
@@ -124,6 +151,25 @@
     }
     .footer-copy{
         padding-left: 1rem;
+    }
+    .top-spaces{
+        border: 0;
+        height: 0.2rem;
+        background: linear-gradient(90deg, #ed4264 35%, #ffedbc 100%);
+    }
+    .proyectos-top-grid{
+        display: contents !important;
+    }
+    .proyectos-top-impar{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .top-description-title{
+        text-align: center;
+        color: #ffedbc !important;  /* color del texto */
+        text-shadow: 2px 2px 4px #000000;  /* sombra del texto */
+        font-family: 'Arial', sans-serif;  /* tipo de letra */
+        font-size: 2em;  /* tamaño del texto */
     }
   }
   
@@ -150,7 +196,30 @@
         margin: 0 !important;
     }
     .carousel-item img{
-        height: 35rem;
+        height: 30rem;
+    }
+    .menu-boton{
+        border: 0.1px solid #ffedbc;
+        background-color: transparent;
+        color: white;
+        cursor: pointer;
+    }
+    .menu-boton:hover{
+        background: linear-gradient(90deg, #ed4264 15%, #ffedbc 100%);
+    }
+    .footer-redes{
+        justify-content: end !important; 
+    }
+    .footer-copy{
+        padding-left: 2rem;
+    }
+    .proyectos-top-impar{
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+    .proyectos-top-par{
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
     }
 }
   
@@ -204,11 +273,34 @@
         justify-content: center;
     }
     .star {
-        font-size: 50px;
+        font-size: 1.5rem;
         color: gray;
     }
     .filled {
         color: gold;
+    }
+    .top-description{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .top-description-title{
+        display: flex;
+        justify-content: center;
+        color: #ffedbc !important;
+    }
+    .top-description-text{
+        padding: 1.2rem;
+    }
+    .top-spaces{
+        border: 0;
+        padding: 0;
+        height: 0.2rem;
+        background: linear-gradient(90deg, #ed4264 35%, #ffedbc 100%);
+    }
+    .top-video{
+        display: flex;
+        align-items: center;
     }
   }
   /* Estilos para pantallas extra grandes (1200px hasta 1500px) */
@@ -275,12 +367,14 @@
     .top-description-title{
         display: flex;
         justify-content: center;
+        color: #ffedbc !important;
     }
     .top-description-text{
         padding: 1.2rem;
     }
     .top-spaces{
         border: 0;
+        padding: 0;
         height: 0.2rem;
         background: linear-gradient(90deg, #ed4264 35%, #ffedbc 100%);
     }
