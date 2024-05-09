@@ -111,6 +111,44 @@
     .card-proyectos{
         display: contents !important;
     }
+    .proyectos-search{
+        margin-top: 2rem;
+        width: 20rem !important;
+        margin-left: 5rem;
+    }
+    .proyectos-search span{
+        width: 2.5rem;
+    }
+    .proyectos-filters h4{
+        color: antiquewhite;
+    }
+    .form-check label{
+        color: antiquewhite;
+    }
+    .proyectos-images{
+        display: flex;
+        align-items: center;
+        margin-left: 12.5rem;
+    }
+    .proyectos-filters .form-check{
+        margin-bottom: 1rem;
+    }
+    .proyectos-images img{
+        width: 40px;
+    }
+    .proyectos-images h3{
+        color: antiquewhite;
+    }
+    .proyectos-texto{
+        color: white;
+    }
+    .proyectos-main .row{
+        margin-bottom: 2rem;
+        display: contents;
+    }
+    .proyectos-forms{
+        display: flex;
+    }
 
 }
 @media (min-width: 576px) and (max-width: 767px) {
@@ -165,10 +203,10 @@
     }
     .top-description-title{
         text-align: center;
-        color: #ffedbc !important;  /* color del texto */
-        text-shadow: 2px 2px 4px #000000;  /* sombra del texto */
-        font-family: 'Arial', sans-serif;  /* tipo de letra */
-        font-size: 2em;  /* tamaño del texto */
+        color: #ffedbc !important;
+        text-shadow: 2px 2px 4px #000000;  
+        font-family: 'Arial', sans-serif;  
+        font-size: 2em;  
     }
     .perfil-circulo {
         width: 150px;
@@ -207,6 +245,44 @@
     }
     .card-footer span{
         width: 5.2rem;
+    }
+    .proyectos-search{
+        margin-top: 2rem;
+        width: 30rem !important;
+        margin-left: 4.5rem;
+    }
+    .proyectos-search span{
+        width: 2.5rem;
+    }
+    .proyectos-filters h4{
+        color: antiquewhite;
+    }
+    .proyectos-filters .form-check{
+        margin-bottom: 1rem;
+    }
+    .form-check label{
+        color: antiquewhite;
+    }
+    .proyectos-images{
+        display: flex;
+        align-items: center;
+        margin-left: 16.5rem;
+    }
+    .proyectos-images img{
+        width: 40px;
+    }
+    .proyectos-images h3{
+        color: antiquewhite;
+    }
+    .proyectos-texto{
+        color: white;
+    }
+    .proyectos-main .row{
+        margin-bottom: 2rem;
+        display: contents;
+    }
+    .proyectos-forms{
+        display: flex;
     }
   }
   
@@ -301,6 +377,47 @@
     }
     .card-leo-content img{
         height: 10rem;
+    }
+    .proyectos-search{
+        margin-top: 2rem;
+        width: 15rem !important;
+    }
+    .proyectos-search span{
+        width: 2.5rem;
+    }
+    .proyectos-filters h4{
+        color: antiquewhite;
+    }
+    .proyectos-filters .form-check{
+        margin: 1.5rem;
+    }
+    .form-check label{
+        color: antiquewhite;
+    }
+    .proyectos-images{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 30%;
+    }
+    .proyectos-images img{
+        width: 48px;
+    }
+    .proyectos-images h3{
+        color: antiquewhite;
+    }
+    .proyectos-texto{
+        color: white;
+    }
+    .proyectos-grid{
+        display: flex;
+    }
+    .proyectos-texto{
+        margin-top: 1rem;
+        font-size: 0.9rem;
+    }
+    .proyectos-main{
+        margin-bottom: 2rem;
     }
   }
   
@@ -404,6 +521,47 @@
     }
     .card-leo-content img{
         height: 20rem;
+    }
+    .proyectos-search{
+        margin-top: 2rem;
+        width: 18rem !important;
+    }
+    .proyectos-search span{
+        width: 2.5rem;
+    }
+    .proyectos-filters h4{
+        color: antiquewhite;
+    }
+    .proyectos-filters .form-check{
+        margin: 1.5rem;
+    }
+    .form-check label{
+        color: antiquewhite;
+    }
+    .proyectos-images{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 30%;
+    }
+    .proyectos-images img{
+        width: 48px;
+    }
+    .proyectos-images h3{
+        color: antiquewhite;
+    }
+    .proyectos-texto{
+        color: white;
+    }
+    .proyectos-grid{
+        display: flex;
+    }
+    .proyectos-texto{
+        margin-top: 1rem;
+        font-size: 0.9rem;
+    }
+    .proyectos-main{
+        margin-bottom: 2rem;
     }
 }
   
@@ -510,6 +668,47 @@
     }
     .card-footer span{
         width: 5.2rem;
+    }
+    .proyectos-search{
+        margin-top: 2rem;
+        width: 20rem !important;
+    }
+    .proyectos-search span{
+        width: 2.5rem;
+    }
+    .proyectos-filters h4{
+        color: antiquewhite;
+    }
+    .proyectos-filters .form-check{
+        margin: 1.5rem;
+    }
+    .form-check label{
+        color: antiquewhite;
+    }
+    .proyectos-images{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 30%;
+    }
+    .proyectos-images img{
+        width: 48px;
+    }
+    .proyectos-images h3{
+        color: antiquewhite;
+    }
+    .proyectos-texto{
+        color: white;
+    }
+    .proyectos-grid{
+        display: flex;
+    }
+    .proyectos-texto{
+        margin-top: 1rem;
+        font-size: 1rem;
+    }
+    .proyectos-main{
+        margin-bottom: 2rem;
     }
   }
   /* Estilos para pantallas extra grandes (1200px hasta 1500px) */
@@ -621,13 +820,56 @@
     .card-footer span{
         width: 5.2rem;
     }
-  }
+    .proyectos-search{
+        margin-top: 2rem;
+        width: 30rem !important;
+    }
+    .proyectos-search span{
+        width: 2.5rem;
+    }
+    .proyectos-filters h4{
+        color: antiquewhite;
+    }
+    .proyectos-filters .form-check{
+        margin: 1.5rem;
+    }
+    .form-check label{
+        color: antiquewhite;
+    }
+    .proyectos-images{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 30%;
+    }
+    .proyectos-images img{
+        width: 48px;
+    }
+    .proyectos-images h3{
+        color: antiquewhite;
+    }
+    .proyectos-texto{
+        color: white;
+    }
+    .proyectos-grid{
+        display: flex;
+    }
+    .proyectos-texto{
+        margin-top: 1rem;
+    }
+    .proyectos-main{
+        margin-bottom: 2rem;
+    }
+    .form-label{
+        color: antiquewhite;
+    }
+}
 .footer-redes{
     flex-flow: nowrap !important;
     margin: 0.5rem;
 }
 .footer-redes li{
-    width: 5.2rem;
+    width: 3.2rem;
 }
 .footer-menu{
     flex-flow: nowrap !important;
