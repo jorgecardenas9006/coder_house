@@ -1,0 +1,99 @@
+.star {
+    font-size: 2rem;
+    color: gray;
+}
+.filled {
+    color: gold;
+}
+.top-description{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.top-description-title{
+    display: flex;
+    justify-content: center;
+    color: #ffedbc !important;
+}
+.top-description-text{
+    padding: 1.2rem;
+}
+.top-spaces{
+    border: 0;
+    padding: 0;
+    height: 0.2rem;
+    background: linear-gradient(90deg, #ed4264 35%, #ffedbc 100%);
+}
+.top-video{
+    display: flex;
+    align-items: center;
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+    .proyectos-top-impar{
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+    .proyectos-top-par{
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+    .top-description-title{
+        text-align: center;
+        color: #ffedbc !important;  /* color del texto */
+        text-shadow: 2px 2px 4px #000000;  /* sombra del texto */
+        font-family: 'Arial', sans-serif;  /* tipo de letra */
+        font-size: 2em;  /* tamaño del texto */
+    }
+}
+@media (min-width: 768px) and (max-width: 991px){
+    .proyectos-top-grid{
+        display: contents !important;
+    }
+    .proyectos-top-impar{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .top-description-title{
+        text-align: center;
+        color: #ffedbc !important;  /* color del texto */
+        text-shadow: 2px 2px 4px #000000;  /* sombra del texto */
+        font-family: 'Arial', sans-serif;  /* tipo de letra */
+        font-size: 2em;  /* tamaño del texto */
+    }
+}
+@media (min-width: 576px) and (max-width: 767px){
+    .proyectos-top-grid{
+        display: contents !important;
+    }
+    .proyectos-top-impar{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .top-description-title{
+        text-align: center;
+        color: #ffedbc !important;
+        text-shadow: 2px 2px 4px #000000;  
+        font-family: 'Arial', sans-serif;  
+        font-size: 2em;  
+    }
+}
+@media (max-width: 575px){
+    .top-description-text{
+        display: none;
+    }
+    .proyectos-top-grid{
+        display: contents !important;
+    }
+    .proyectos-top-impar{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .top-description-title{
+        text-align: center;
+        color: #ffedbc !important;  /* color del texto */
+        text-shadow: 2px 2px 4px #000000;  /* sombra del texto */
+        font-family: 'Arial', sans-serif;  /* tipo de letra */
+        font-size: 2em;  /* tamaño del texto */
+    }
+}
