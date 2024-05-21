@@ -1,0 +1,86 @@
+.perfil-circulo {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50% !important;
+  }
+  
+.perfil-circulo img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+}
+.perfil-foto{
+    display: flex;
+}
+.perfil-descripcion-texto{
+    font-size: 1.2rem;
+    padding: 2rem 16rem 0 16rem;
+
+}
+.habilidades{
+    display: flex;
+    justify-content: center;
+}
+@media (min-width: 1200px) and (max-width: 1499px){
+    .perfil-circulo {
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
+        border-radius: 50% !important;
+      }
+    .perfil-descripcion-texto{
+        font-size: 1rem;
+        padding: 1rem 15rem 0 15rem;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+    .perfil-circulo {
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
+        border-radius: 50% !important;
+      }
+    .perfil-descripcion-texto{
+        font-size: 1rem;
+        padding: 1rem 15rem 0 15rem;
+    }
+    .habilidades{
+        padding-top: 2rem;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px){
+    .perfil-descripcion-texto{
+        font-size: 1rem;
+        padding: 0rem 10rem 0 10rem;
+    }
+    .habilidades{
+        padding-top: 1.5rem;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px){
+    .perfil-descripcion{
+        display: contents !important;
+    }
+    .perfil-descripcion-texto{
+        font-size: 0.8rem;
+        padding: 0rem 8rem 0 8rem;
+    }
+    .habilidades{
+        padding-top: 1rem;
+    }
+}
+@media (max-width: 575px){
+    .perfil-descripcion{
+        display: contents !important;
+    }
+    .perfil-descripcion-texto{
+        font-size: 0.8rem;
+        padding: 0rem 5rem 0 5rem;
+    }
+    .habilidades{
+        padding-top: 0.5rem;
+    }
+}

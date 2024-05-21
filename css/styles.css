@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   width: 100%;
 }
@@ -214,6 +213,150 @@ footer div span {
     justify-content: center !important;
   }
 }
+.perfil-circulo {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50% !important;
+}
+
+.perfil-circulo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.perfil-foto {
+  display: flex;
+}
+
+.perfil-descripcion-texto {
+  font-size: 1.2rem;
+  padding: 2rem 16rem 0 16rem;
+}
+
+.habilidades {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 1200px) and (max-width: 1499px) {
+  .perfil-circulo {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50% !important;
+  }
+  .perfil-descripcion-texto {
+    font-size: 1rem;
+    padding: 1rem 15rem 0 15rem;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .perfil-circulo {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50% !important;
+  }
+  .perfil-descripcion-texto {
+    font-size: 1rem;
+    padding: 1rem 15rem 0 15rem;
+  }
+  .habilidades {
+    padding-top: 2rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .perfil-descripcion-texto {
+    font-size: 1rem;
+    padding: 0rem 10rem 0 10rem;
+  }
+  .habilidades {
+    padding-top: 1.5rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .perfil-descripcion {
+    display: contents !important;
+  }
+  .perfil-descripcion-texto {
+    font-size: 0.8rem;
+    padding: 0rem 8rem 0 8rem;
+  }
+  .habilidades {
+    padding-top: 1rem;
+  }
+}
+@media (max-width: 575px) {
+  .perfil-descripcion {
+    display: contents !important;
+  }
+  .perfil-descripcion-texto {
+    font-size: 0.8rem;
+    padding: 0rem 5rem 0 5rem;
+  }
+  .habilidades {
+    padding-top: 0.5rem;
+  }
+}
+.card-leo-content img {
+  height: 20rem;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: center;
+}
+
+.card-footer span {
+  width: 5.2rem;
+}
+
+@media (min-width: 1200px) and (max-width: 1499px) {
+  .card-img img {
+    height: 18rem;
+  }
+  .card-proyectos div .p-3 {
+    height: 100%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .card-img img {
+    height: 16rem;
+  }
+  .card-proyectos div .p-3 {
+    height: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .card-img img {
+    height: 14rem;
+  }
+  .card-proyectos div .p-3 {
+    height: 100%;
+  }
+  .card-leo-content img {
+    height: 10rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .card-leo-content img {
+    height: 15rem;
+  }
+  .card-proyectos {
+    display: contents !important;
+  }
+}
+@media (max-width: 575px) {
+  .card-leo-content img {
+    height: 12rem;
+  }
+  .card-proyectos {
+    display: contents !important;
+  }
+}
 .star {
   font-size: 2rem;
   color: gray;
@@ -252,20 +395,17 @@ footer div span {
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-  .proyectos-top-impar {
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-  }
+  .proyectos-top-impar,
   .proyectos-top-par {
     margin-left: 1.5rem;
     margin-right: 1.5rem;
   }
   .top-description-title {
     text-align: center;
-    color: #ffedbc !important; /* color del texto */
-    text-shadow: 2px 2px 4px #000000; /* sombra del texto */
-    font-family: "Arial", sans-serif; /* tipo de letra */
-    font-size: 2em; /* tamaño del texto */
+    color: #ffedbc !important;
+    text-shadow: 2px 2px 4px #000000;
+    font-family: "Arial", sans-serif;
+    font-size: 2em;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -278,10 +418,10 @@ footer div span {
   }
   .top-description-title {
     text-align: center;
-    color: #ffedbc !important; /* color del texto */
-    text-shadow: 2px 2px 4px #000000; /* sombra del texto */
-    font-family: "Arial", sans-serif; /* tipo de letra */
-    font-size: 2em; /* tamaño del texto */
+    color: #ffedbc !important;
+    text-shadow: 2px 2px 4px #000000;
+    font-family: "Arial", sans-serif;
+    font-size: 2em;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
@@ -313,9 +453,9 @@ footer div span {
   }
   .top-description-title {
     text-align: center;
-    color: #ffedbc !important; /* color del texto */
-    text-shadow: 2px 2px 4px #000000; /* sombra del texto */
-    font-family: "Arial", sans-serif; /* tipo de letra */
-    font-size: 2em; /* tamaño del texto */
+    color: #ffedbc !important;
+    text-shadow: 2px 2px 4px #000000;
+    font-family: "Arial", sans-serif;
+    font-size: 2em;
   }
 }/*# sourceMappingURL=styles.css.map */
