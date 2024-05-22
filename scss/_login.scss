@@ -1,0 +1,20 @@
+.login{
+    div{
+        h4{
+            color: $color-antiquewhite;
+        }
+        form{
+            div{
+                label{
+                    color: $color-antiquewhite;
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 1rem;
+                }
+            }
+            button{
+                background-color: $color-antiquewhite;
+            }
+        }
+    }
+}

@@ -213,6 +213,138 @@ footer div span {
     justify-content: center !important;
   }
 }
+.proyectos-search {
+  margin-top: 2rem;
+  width: 30rem !important;
+}
+.proyectos-search span {
+  width: 2.5rem;
+}
+
+.proyectos-filters h4 {
+  color: antiquewhite;
+}
+.proyectos-filters .form-check {
+  margin: 1.5rem;
+}
+.proyectos-filters .form-check label {
+  color: antiquewhite;
+}
+
+.proyectos-images {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30%;
+}
+.proyectos-images img {
+  width: 48px;
+}
+.proyectos-images h3 {
+  color: antiquewhite;
+}
+
+.proyectos-texto {
+  color: white;
+  margin-top: 1rem;
+}
+
+.proyectos-grid {
+  display: flex;
+}
+
+.proyectos-main {
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 1200px) and (max-width: 1499px) {
+  .proyectos-search {
+    width: 20rem !important;
+  }
+  .proyectos-texto {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .proyectos-search {
+    width: 18rem !important;
+  }
+  .proyectos-texto {
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .proyectos-search {
+    width: 15rem !important;
+  }
+  .proyectos-texto {
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .proyectos-forms {
+    display: flex;
+  }
+  .form-check label {
+    font-size: 1rem;
+  }
+  .proyectos-search {
+    width: 100% !important;
+  }
+  .proyectos-search {
+    margin-left: 0.5rem;
+  }
+  .proyectos-filters .form-check {
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+}
+@media (max-width: 575px) {
+  .proyectos-forms {
+    display: flex;
+  }
+  .form-check label {
+    font-size: 1rem;
+  }
+  .proyectos-search {
+    width: 100% !important;
+  }
+  .proyectos-search {
+    margin-left: 0.5rem;
+  }
+  .proyectos-filters .form-check {
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+  .proyectos-texto {
+    font-size: 0.9rem;
+  }
+}
+.form-label {
+  color: antiquewhite;
+}
+
+.form-check-label {
+  color: antiquewhite;
+}
+
+.formulario-usuario span {
+  width: 2.5rem;
+}
+
+.login div h4 {
+  color: antiquewhite;
+}
+.login div form div label {
+  color: antiquewhite;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.login div form button {
+  background-color: antiquewhite;
+}
+
 .perfil-circulo {
   width: 200px;
   height: 200px;
