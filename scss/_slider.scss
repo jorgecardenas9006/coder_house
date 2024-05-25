@@ -1,0 +1,60 @@
+// Variables
+$carousel-item-height-large: 35rem;
+$carousel-item-height-medium-large: 30rem;
+$carousel-item-height-medium: 25rem;
+$carousel-item-height-small-medium: 20rem;
+$carousel-item-height-small: 18rem;
+$carousel-width-xl: 85%;
+$carousel-width-lg: 90%;
+
+// Mixins
+@mixin carousel-item-height($height) {
+  .carousel-item img {
+    height: $height;
+  }
+}
+
+@mixin carousel-width($width) {
+  .carousel {
+    width: $width;
+  }
+}
+
+// Base Styles
+.carousel-indicators {
+  margin: 0 !important;
+}
+
+.carousel-item img {
+  height: $carousel-item-height-large;
+}
+
+.carousel-main {
+  display: flex;
+  justify-content: center;
+}
+
+// Media Queries
+@media (min-width: 1500px) {
+  @include carousel-width($carousel-width-xl);
+}
+
+@media (min-width: 1200px) and (max-width: 1499px) {
+  @include carousel-width($carousel-width-lg);
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  @include carousel-item-height($carousel-item-height-medium-large);
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  @include carousel-item-height($carousel-item-height-medium);
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  @include carousel-item-height($carousel-item-height-small-medium);
+}
+
+@media (max-width: 575px) {
+  @include carousel-item-height($carousel-item-height-small);
+}

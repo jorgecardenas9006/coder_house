@@ -1,0 +1,114 @@
+// Variables
+$star-font-size: 2rem;
+$star-color: gray;
+$star-filled-color: gold;
+$description-padding: 1.2rem;
+$top-border-height: 0.2rem;
+$top-gradient: linear-gradient(90deg, #ed4264 35%, #ffedbc 100%);
+$description-title-color: #ffedbc !important;
+$description-title-shadow: 2px 2px 4px #000000;
+$description-title-font-family: 'Arial', sans-serif;
+$description-title-font-size: 2em;
+$project-margin: 1.5rem;
+
+// Mixins
+@mixin description-title-styles {
+  text-align: center;
+  color: $description-title-color;  
+  text-shadow: $description-title-shadow;  
+  font-family: $description-title-font-family;  
+  font-size: $description-title-font-size;  
+}
+
+// Base Styles
+.star {
+  font-size: $star-font-size;
+  color: $star-color;
+}
+
+.filled {
+  color: $star-filled-color;
+}
+
+.top-description {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.top-description-title {
+  display: flex;
+  justify-content: center;
+  color: $description-title-color;
+}
+
+.top-description-text {
+  padding: $description-padding;
+}
+
+.top-spaces {
+  border: 0;
+  padding: 0;
+  height: $top-border-height;
+  background: $top-gradient;
+}
+
+.top-video {
+  display: flex;
+  align-items: center;
+}
+
+// Media Queries
+@media (min-width: 992px) and (max-width: 1199px) {
+  .proyectos-top-impar,
+  .proyectos-top-par {
+    margin-left: $project-margin;
+    margin-right: $project-margin;
+  }
+  .top-description-title {
+    @include description-title-styles;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .proyectos-top-grid {
+    display: contents !important;
+  }
+  .proyectos-top-impar {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .top-description-title {
+    @include description-title-styles;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .proyectos-top-grid {
+    display: contents !important;
+  }
+  .proyectos-top-impar {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .top-description-title {
+    @include description-title-styles;
+  }
+}
+
+@media (max-width: 575px) {
+  .top-description-text {
+    display: none;
+  }
+  .proyectos-top-grid {
+    display: contents !important;
+  }
+  .proyectos-top-impar {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .top-description-title {
+    @include description-title-styles;
+  }
+}
+
