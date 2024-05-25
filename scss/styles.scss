@@ -1,0 +1,16 @@
+* {
+    width: 100%;                                            ;
+ }
+ body{
+    background: #212529 !important;
+}
+@import 'menu';
+@import 'slider';
+@import 'footer';
+@import 'articulos';
+@import 'contacto';
+@import 'login';
+@import 'perfil';
+@import 'proyectos';
+@import 'index';
+

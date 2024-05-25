@@ -1,0 +1,87 @@
+// Variables
+$footer-redes-margin: 0.5rem;
+$footer-redes-width-large: 3.2rem;
+$footer-redes-width-medium: 2.5rem;
+$footer-copy-color: white;
+$footer-menu-color: white;
+
+// Mixins
+@mixin flex-center {
+  display: flex;
+  justify-content: center !important;
+}
+
+@mixin flex-start {
+  display: flex;
+  justify-content: flex-start !important;
+  margin-left: 1rem;
+}
+
+@mixin footer-redes-styles($width) {
+  li {
+    width: $width;
+  }
+}
+
+// Base Styles
+.footer-redes {
+  flex-flow: nowrap !important;
+  margin: $footer-redes-margin;
+
+  li {
+    width: $footer-redes-width-large;
+  }
+}
+
+.footer-menu {
+  flex-flow: nowrap !important;
+
+  a {
+    color: $footer-menu-color !important;
+  }
+}
+
+.footer-copy {
+  color: $footer-copy-color;
+}
+
+footer {
+  div {
+    span {
+      @include flex-center;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  footer {
+    div {
+      span {
+        @include flex-start;
+      }
+    }
+  }
+  .footer-redes {
+    @include footer-redes-styles($footer-redes-width-medium);
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .footer-copy,
+  .footer-menu a {
+    @include flex-center;
+  }
+  .footer-redes {
+    justify-content: center !important; 
+  }
+}
+
+@media (max-width: 575px) {
+  .footer-copy,
+  .footer-menu a {
+    @include flex-center;
+  }
+  .footer-redes {
+    justify-content: center !important; 
+  }
+}

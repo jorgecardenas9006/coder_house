@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <title>Devops page</title>
+</head>
+<body>
+    <nav class="navbar bg-dark navbar-expand-lg" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html"><img class="menu-logo" src="../assets/logo.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end menu-list" id="navbarNavDropdown">
+            <ul class="navbar-nav menu-ul">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="perfil.html">Perfil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="proyectos.html">Proyectos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="articulos.html">Articulos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+            <div class="menu-login">
+                <button class="menu-boton" type="submit" href="login.html"><a class="nav-link" href="login.html">Login</a></button>
+            </div>
+          </div>
+        </div>
+    </nav>
+    <div class="p-3 m-0 border-0 bd-example m-0 border-0 carousel-main">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="2000">
+                <img src="../assets/working.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="../assets/working-code.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../assets/working-code-2.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
+
+    <br>
+
+    <section class="proyectos-main">
+      <div class="row">
+        <div class="col col-xl-1 col-md-1">
+        </div>
+        <div class="col col-xl-4 col-md-4 col-sm-12 proyectos-filters">
+          <div class="input-group flex-nowrap proyectos-search">
+            <span class="input-group-text" id="addon-wrapping"><img src="../assets/lupa.png" alt=""></span>
+            <input type="text" class="form-control" placeholder="Buscar" aria-label="Buscar" aria-describedby="addon-wrapping">
+          </div>
+          <br>
+          <h4>Filtrar por:</h4>
+          <div class="proyectos-forms">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+              <label class="form-check-label" for="flexCheckChecked">
+                Kubernetes
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                CI/CD
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                AWS
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Monitoreo
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Iac
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Scripting
+              </label>
+            </div>
+
+          </div>
+        </div>
+        <div class="col col-xl-6 col-md-6 col-sm-12">
+
+          <h3 style="color: antiquewhite; text-align: center;">Automatización de CI/CD: El motor de la entrega continua en DevOps</h3>
+          <div class="proyectos-grid">
+            <div class="proyectos-images">
+  
+              <img src="../assets/pages.png" alt="">
+              <a href="">
+                <img src="../assets/plus.png" alt="">
+              </a>
+            </div>
+            <div class="proyectos-texto">
+              <p>Profundiza en el proceso de implementación de un pipeline de Integración Continua/Entrega Continua (CI/CD) en un entorno DevOps. Comienza explicando los fundamentos de CI/CD y su papel en la aceleración del ciclo de vida del desarrollo de software. Luego, se detalla paso a paso cómo configurar un pipeline de CI/CD, desde la integración de código hasta las pruebas automatizadas y el despliegue en producción. Se presentan ejemplos de herramientas populares como Jenkins, GitLab CI o CircleCI, junto con consejos prácticos y mejores prácticas para optimizar el proceso de entrega continua.</p>
+            </div>
+          </div>
+
+          <hr class="top-spaces">
+
+          <h3 style="color: antiquewhite; text-align: center;">Terraform: Construyendo Infraestructura como Código para una Nube Escalable</h3>
+          <div class="proyectos-grid">
+            <div class="proyectos-images">
+  
+              <img src="../assets/pages.png" alt="">
+              <a href="">
+                <img src="../assets/plus.png" alt="">
+              </a>
+            </div>
+            <div class="proyectos-texto">
+              <p>Este artículo se centra en el concepto de Infraestructura como Código (IaC) y cómo Terraform se ha convertido en una herramienta esencial para la gestión de infraestructura en la nube. Se inicia explicando los beneficios de adoptar el enfoque de IaC y cómo Terraform permite definir y mantener la infraestructura de manera programática. A través de ejemplos prácticos y casos de uso, se guía al lector a través del proceso de creación de recursos en la nube utilizando Terraform, mostrando cómo mantener la infraestructura de manera eficiente, escalable y reproducible.</p>
+            </div>
+          </div>
+
+          <hr class="top-spaces">
+
+          <h3 style="color: antiquewhite; text-align: center;">Monitoreo y Alertas Automatizadas: Manteniendo la Salud del Sistema en DevOps</h3>
+          <div class="proyectos-grid">
+            <div class="proyectos-images">
+  
+              <img src="../assets/pages.png" alt="">
+              <a href="">
+                <img src="../assets/plus.png" alt="">
+              </a>
+            </div>
+            <div class="proyectos-texto">
+              <p>Aborda la importancia crítica del monitoreo continuo y las alertas automatizadas en un entorno DevOps. Comienza explicando los principios fundamentales del monitoreo de sistemas y las métricas clave que deben ser monitoreadas para garantizar un rendimiento óptimo del sistema. Luego, se presentan herramientas populares como Prometheus y Grafana, y se proporciona una guía detallada sobre cómo configurar un sistema de monitoreo completo. Se incluyen ejemplos prácticos y estrategias para establecer alertas efectivas que permitan detectar y solucionar problemas de manera proactiva.</p>
+            </div>
+          </div>
+
+          <hr class="top-spaces">
+          
+
+          <h3 style="color: antiquewhite; text-align: center;">Gestionando Contenedores con Kubernetes: Orquestando el Futuro de la Implementación de Aplicaciones</h3>
+          <div class="proyectos-grid">
+            <div class="proyectos-images">
+  
+              <img src="../assets/pages.png" alt="">
+              <a href="">
+                <img src="../assets/plus.png" alt="">
+              </a>
+            </div>
+            <div class="proyectos-texto">
+              <p>Este artículo explora el papel de Kubernetes como plataforma de orquestación de contenedores en entornos DevOps. Comienza explicando los conceptos básicos de Kubernetes, incluida su arquitectura y los principales componentes del sistema. Luego, se profundiza en cómo Kubernetes facilita la implementación y gestión de aplicaciones en contenedores, incluida la escalabilidad automática, el balanceo de carga y la gestión de recursos. Se presentan casos de uso y ejemplos prácticos que ilustran cómo Kubernetes puede mejorar la eficiencia y la escalabilidad en proyectos DevOps.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <div class="mapouter"><div class="gmap_canvas"><iframe height="480" id="gmap_canvas" src="https://maps.google.com/maps?q=bogota&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://online.stopwatch-timer.net"></a><br><a href="https://textcaseconvert.com"></a><br><style>.mapouter{position: relative;text-align: right;height: 480px;}</style><style>.gmap_canvas{overflow: hidden;background: none !important;}</style></div></div>
+
+
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <div class=" col-md-5 col-lg-4 d-flex align-items-center">
+        <span class="mb-3 mb-md-0 footer-copy">© 2024 Jorge cárdenas, Inc</span>
+      </div>
+
+      <ul class="nav col-md-3 justify-content-end footer-menu">
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+        <li class="nav-item"><a href="perfil.html" class="nav-link px-2 text-body-secondary">Perfil</a></li>
+        <li class="nav-item"><a href="proyectos.html" class="nav-link px-2 text-body-secondary">Proyectos</a></li>
+        <li class="nav-item"><a href="articulos.html" class="nav-link px-2 text-body-secondary">Articulos</a></li>
+        <li class="nav-item"><a href="contacto.html" class="nav-link px-2 text-body-secondary">Contacto</a></li>
+      </ul>
+  
+      <ul class="nav col-md-3 list-unstyled d-flex footer-redes">
+        <li class="ms-3"><a class="text-body-secondary" href="#"><img src="../assets/whatsapp.png" alt=""></a></li>
+        <li class="ms-3"><a class="text-body-secondary" href="#"><img src="../assets/facebook.png" alt=""></a></li>
+        <li class="ms-3"><a class="text-body-secondary" href="#"><img src="../assets/gmail.png" alt=""></a></li>
+      </ul>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
