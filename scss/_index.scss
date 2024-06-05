@@ -10,6 +10,7 @@ $description-title-shadow: 2px 2px 4px #000000;
 $description-title-font-family: 'Arial', sans-serif;
 $description-title-font-size: 2em;
 $project-margin: 1.5rem;
+$extra-space: 1rem;
 
 // Mixins
 @mixin description-title-styles {
@@ -21,6 +22,11 @@ $project-margin: 1.5rem;
 }
 
 // Base Styles
+
+.extra-space {
+  margin-top: $extra-space;
+}
+
 .star {
   font-size: $star-font-size;
   color: $star-color;
