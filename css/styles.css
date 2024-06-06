@@ -490,6 +490,10 @@ footer div span {
     display: contents !important;
   }
 }
+.extra-space {
+  margin-top: 1rem;
+}
+
 .star {
   font-size: 2rem;
   color: gray;
