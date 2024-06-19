@@ -1,0 +1,82 @@
+# Ignorar archivos y directorios de sistema
+.DS_Store
+Thumbs.db
+
+# Ignorar archivos de compilación
+*.class
+*.o
+*.out
+*.log
+
+# Ignorar directorios de dependencias y paquetes
+node_modules/
+vendor/
+__pycache__/
+venv/
+env/
+.build/
+target/
+dist/
+build/
+
+# Ignorar configuraciones de IDE
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Ignorar archivos de configuración específicos del sistema
+*.local
+*.env
+.env.local
+.env.*.local
+.envrc
+
+# Ignorar archivos temporales
+*.tmp
+*.swp
+*.swo
+*~
+*.bak
+
+# Ignorar archivos de logs
+*.log
+
+# Ignorar otros archivos innecesarios
+*.zip
+*.tar.gz
+*.rar
+*.7z
+*.backup
+
+# Ignorar archivos de configuración de Docker
+.dockerignore
+
+# Ignorar archivos y carpetas generados por npm
+package-lock.json
+npm-debug.log
+yarn-error.log
+
+# Ignorar archivos y carpetas de Python
+*.pyc
+*.pyo
+*.pyd
+
+# Ignorar archivos de configuración de JetBrains
+*.iml
+*.ipr
+*.iws
+
+# Ignorar archivos de configuración de Visual Studio Code
+.vscode/
+
+# Ignorar archivos de configuración de Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Ignorar archivos de configuración de Eclipse
+.project
+.classpath
+.cproject
