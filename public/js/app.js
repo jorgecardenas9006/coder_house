@@ -1,4 +1,4 @@
-window.alert(`
+alert(`
     *********************************
     *                           
     *  Aplicacion de productos  
@@ -13,8 +13,7 @@ window.alert(`
     - La contraseña debe tener al menos 8 caracteres y contener al menos un número
     -------------------------------------------
 `);
-
-let usuario = prompt("Digite su usuario");
-let contrasena = prompt("Digite su contraseña");
+const app = new usersView();
+app.loginUser();
 
 
