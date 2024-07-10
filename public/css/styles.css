@@ -1,0 +1,118 @@
+* {
+  width: 100%;
+}
+
+body {
+  background: #212529 !important;
+}
+
+.navbar-brand {
+  width: 15rem;
+}
+
+.menu-logo {
+  width: 10rem;
+}
+
+.menu-login {
+  width: auto;
+}
+
+.menu-boton {
+  border: 0.1px solid #ffedbc;
+  background-color: transparent;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 8rem;
+}
+.menu-boton:hover {
+  background: linear-gradient(90deg, #ed4264 15%, #ffedbc 100%);
+}
+
+.menu-ul {
+  width: 35rem;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .menu-logo {
+    width: 10rem;
+  }
+  .menu-boton {
+    border: 0.1px solid #ffedbc;
+    background-color: transparent;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 6rem;
+  }
+  .menu-login {
+    display: flex;
+  }
+  .menu-list {
+    align-items: baseline !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .navbar .container-fluid {
+    display: flex;
+    justify-content: center !important;
+  }
+  .menu-logo {
+    width: 15rem;
+  }
+  .menu-boton {
+    border: 0.1px solid #ffedbc;
+    background-color: transparent;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: auto;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .navbar .container-fluid {
+    display: flex;
+    justify-content: center !important;
+  }
+  .menu-logo {
+    width: 15rem;
+  }
+  .container-fluid {
+    display: flex;
+    justify-content: end;
+  }
+  .menu-boton {
+    border: 0.1px solid #ffedbc;
+    background-color: transparent;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: auto;
+  }
+}
+@media (max-width: 575px) {
+  .navbar .container-fluid {
+    display: flex;
+    justify-content: center !important;
+  }
+  .navbar-brand {
+    display: flex;
+    justify-content: center;
+  }
+  .menu-logo {
+    width: 10rem;
+  }
+  .container-fluid {
+    display: flex;
+    justify-content: end;
+  }
+  .menu-boton {
+    border: 0.1px solid #ffedbc;
+    background-color: transparent;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: auto;
+  }
+}/*# sourceMappingURL=styles.css.map */

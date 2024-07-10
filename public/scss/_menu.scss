@@ -1,0 +1,122 @@
+// Variables
+$navbar-brand-width: 15rem;
+$menu-logo-width-large: 10rem;
+$menu-logo-width-medium: 15rem;
+$menu-button-width-large: 8rem;
+$menu-button-width-medium: 6rem;
+$menu-border-color: #ffedbc;
+$menu-button-padding: 10px 20px;
+$menu-button-hover-gradient: linear-gradient(90deg, #ed4264 15%, #ffedbc 100%);
+
+
+@mixin menu-button-styles($width) {
+  border: 0.1px solid $menu-border-color;
+  background-color: transparent;
+  color: white;
+  padding: $menu-button-padding;
+  cursor: pointer;
+  width: $width;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center !important;
+}
+
+@mixin flex-end {
+  display: flex;
+  justify-content: end;
+}
+
+
+.navbar-brand {
+  width: $navbar-brand-width;
+}
+
+.menu-logo {
+  width: $menu-logo-width-large;
+}
+
+.menu-login {
+  width: auto;
+}
+
+.menu-boton {
+  @include menu-button-styles($menu-button-width-large);
+  
+  &:hover {
+    background: $menu-button-hover-gradient;
+  }
+}
+
+.menu-ul {
+  width: 35rem;
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .menu-logo {
+    width: $menu-logo-width-large;
+  }
+  .menu-boton {
+    @include menu-button-styles($menu-button-width-medium);
+  }
+  .menu-login {
+    display: flex;
+  }
+  .menu-list {
+    align-items: baseline !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .navbar {
+    .container-fluid {
+      @include flex-center;
+    }
+  }
+  .menu-logo {
+    width: $menu-logo-width-medium;
+  }
+  .menu-boton {
+    @include menu-button-styles(auto);
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .navbar {
+    .container-fluid {
+      @include flex-center;
+    }
+  }
+  .menu-logo {
+    width: $menu-logo-width-medium;
+  }
+  .container-fluid {
+    @include flex-end;
+  }
+  .menu-boton {
+    @include menu-button-styles(auto);
+  }
+}
+
+@media (max-width: 575px) {
+  .navbar {
+    .container-fluid {
+      @include flex-center;
+    }
+  }
+  .navbar-brand {
+    display: flex;
+    justify-content: center;
+  }
+  .menu-logo {
+    width: $menu-logo-width-large;
+  }
+  .container-fluid {
+    @include flex-end;
+  }
+  .menu-boton {
+    @include menu-button-styles(auto);
+  }
+}
