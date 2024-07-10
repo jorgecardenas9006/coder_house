@@ -1,3 +1,4 @@
 window.addEventListener('load', ()=> {
-  console.log('The page has finished loading');
+  let menu = new MenuView();
+  menu.showMenu();
 });
