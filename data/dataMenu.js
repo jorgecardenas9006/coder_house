@@ -14,8 +14,8 @@ class DataMenu{
                 url: '#proyectos'
             },
             {
-                name: 'Contact',
-                url: 'contact.html'
+                name: 'Contacto',
+                url: '#contacto'
             }
         ];
     }

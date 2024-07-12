@@ -14,6 +14,15 @@ body {
   width: 10rem;
 }
 
+.modal-menu-logo {
+  width: 10rem;
+}
+
+.navbar-brand {
+  display: flex;
+  justify-content: center !important;
+}
+
 .menu-login {
   width: auto;
 }
@@ -34,6 +43,11 @@ body {
   width: 35rem;
 }
 
+.modal-header {
+  display: flex;
+  justify-content: center !important;
+}
+
 @media (min-width: 992px) and (max-width: 1199px) {
   .menu-logo {
     width: 10rem;
@@ -51,6 +65,10 @@ body {
   }
   .menu-list {
     align-items: baseline !important;
+  }
+  .modal-header {
+    display: flex;
+    justify-content: center !important;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {

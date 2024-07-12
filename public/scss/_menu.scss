@@ -36,6 +36,12 @@ $menu-button-hover-gradient: linear-gradient(90deg, #ed4264 15%, #ffedbc 100%);
 .menu-logo {
   width: $menu-logo-width-large;
 }
+.modal-menu-logo {
+  width: $menu-logo-width-large;
+}
+.navbar-brand{
+  @include flex-center;
+}
 
 .menu-login {
   width: auto;
@@ -52,7 +58,9 @@ $menu-button-hover-gradient: linear-gradient(90deg, #ed4264 15%, #ffedbc 100%);
 .menu-ul {
   width: 35rem;
 }
-
+.modal-header{
+  @include flex-center;
+}
 
 @media (min-width: 992px) and (max-width: 1199px) {
   .menu-logo {
@@ -66,6 +74,9 @@ $menu-button-hover-gradient: linear-gradient(90deg, #ed4264 15%, #ffedbc 100%);
   }
   .menu-list {
     align-items: baseline !important;
+  }
+  .modal-header{
+    @include flex-center;
   }
 }
 
