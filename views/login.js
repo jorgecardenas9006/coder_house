@@ -20,8 +20,8 @@ class LoginView{
         login_pass.appendChild(loginSuccess);
     }
     deleteAlerts(){
-        const login_pass = document.getElementById('login-alert');
-        if(login_pass){
+        const alert = document.getElementById('login-alert');
+        if(alert){
             login_pass.remove();
         }
     }
