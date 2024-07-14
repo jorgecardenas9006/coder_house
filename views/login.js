@@ -5,20 +5,18 @@ class LoginView{
     validatePassword(password){
         const login_pass = document.getElementById('login-pass');
         let pass = this.controller.validatePassword(password);
+        let login = document.createElement('div')
+        login.id = 'login-alert';
         if(!pass){
-            let loginError = document.createElement('div');
-            loginError.classList.add('alert', 'alert-danger');
-            loginError.id = 'login-alert';
-            loginError.innerHTML = `La contraseña debe tener al menos 8 caracteres, una letra mayúscula, una letra minúscula, un número y un caracter especial`;
-            login_pass.appendChild(loginError);
+            login.classList.add('alert', 'alert-danger');
+            login.innerHTML = `La contraseña debe tener al menos 8 caracteres, una letra mayúscula, una letra minúscula, un número y un caracter especial`;
+            login_pass.appendChild(login);
             this.blockButtonSend();
             return 0;
         }
-        let loginSuccess = document.createElement('div')
-        loginSuccess.classList.add('alert', 'alert-success');
-        loginSuccess.id = 'login-alert';
-        loginSuccess.innerHTML = `Contraseña correcta`;
-        login_pass.appendChild(loginSuccess);
+        login.classList.add('alert', 'alert-success');
+        login.innerHTML = `Contraseña correcta`;
+        login_pass.appendChild(login);
         this.activeButtonSend();
     }
     deleteAlerts(){

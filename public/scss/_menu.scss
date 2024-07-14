@@ -61,6 +61,11 @@ $menu-button-hover-gradient: linear-gradient(90deg, #ed4264 15%, #ffedbc 100%);
 .modal-header{
   @include flex-center;
 }
+.registrarse{
+  .olvido-contrasena{
+    color: $menu-border-color !important;
+  }
+}
 
 @media (min-width: 992px) and (max-width: 1199px) {
   .menu-logo {

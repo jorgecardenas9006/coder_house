@@ -48,6 +48,10 @@ body {
   justify-content: center !important;
 }
 
+.registrarse .olvido-contrasena {
+  color: #ffedbc !important;
+}
+
 @media (min-width: 992px) and (max-width: 1199px) {
   .menu-logo {
     width: 10rem;
