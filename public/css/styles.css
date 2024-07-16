@@ -48,7 +48,11 @@ body {
   justify-content: center !important;
 }
 
-.registrarse .olvido-contrasena {
+.registrarse {
+  color: #ffedbc !important;
+}
+
+.olvido-contrasena {
   color: #ffedbc !important;
 }
 
